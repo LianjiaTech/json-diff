@@ -1,7 +1,7 @@
 
 JsonDiff介绍
 =================
-#### JsonDiff提供了对Json通用的diff能力，多种算法模型满足对Json比较时各种不同的需求。同时JsonDiff也支持自定义算法、算法模型可配置、噪音字段过滤、自定义比较字段等多种通用功能。
+#### JsonDiff提供了对Json通用的diff能力，支持Json字符串的深度比较，支持无序数组比较，内含多种算法模型满足对Json比较时各种需求。 同时JsonDiff也支持自定义算法、算法模型可配置、噪音字段过滤、自定义比较字段等多种通用功能。
 
 ## 1.JsonDiff是什么
 
@@ -32,7 +32,7 @@ json的比较算法可以抽象为针对四种json基本结构的比较（JsonAr
 ## 3.features
 
 - ①**JsonObject比较时，忽略噪声字段**
-- ②**JsonObject比较时，仅比较第一个json的所有属性（项目重构时一般只关注新街口是否完全覆盖老接口，新街口多字段无所谓）**
+- ②**JsonObject比较时，仅比较第一个json的所有属性（项目重构时一般只关注新接口是否完全覆盖老接口，新接口多字段无所谓）**
 > ![SimpleObject](docs/img/SimpleObject.png "SimpleObject")  
   ![LeftJoin](docs/img/LeftJoinObject.png "LeftJoin")
 - ③**JsonArray比较时，严格按照顺序比较**
